@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<NFSE xsi:schemaLocation="https://iss.fortaleza.ce.gov.br/grpfor/schema/V2/tipos_v02.xsd" xmlns="http://www.ginfes.com.br/tipos" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Nfse>
+        <IdentificacaoNfse>
+            <Numero>5</Numero>
+            <CodigoVerificacao>664987437</CodigoVerificacao>
+        </IdentificacaoNfse>
+        <DataEmissao>2021-08-20T13:21:28.866-03:00</DataEmissao>
+        <NaturezaOperacao>1</NaturezaOperacao>
+        <RegimeEspecialTributacao>6</RegimeEspecialTributacao>
+        <OptanteSimplesNacional>1</OptanteSimplesNacional>
+        <IncetivadorCultural>2</IncetivadorCultural>
+        <Competencia>2021-08-01-03:00</Competencia>
+        <Servico>
+            <Valores>
+                <ValorServicos>10692.05</ValorServicos>
+                <IssRetido>2</IssRetido>
+                <ValorIss>214.91</ValorIss>
+                <BaseCalculo>10692.05</BaseCalculo>
+                <Aliquota>2.01</Aliquota>
+                <ValorLiquidoNfse>10692.05</ValorLiquidoNfse>
+                <ValorIssRetido>0</ValorIssRetido>
+            </Valores>
+            <ItemListaServico>104</ItemListaServico>
+            <CodigoTributacaoMunicipio>620150199</CodigoTributacaoMunicipio>
+            <Discriminacao>Serviço prestado competência Agosto-2021.
+Total dos impostos incidentes desta NF Lei 12.741/2012, R$ 641,52.</Discriminacao>
+            <MunicipioPrestacaoServico>2304400</MunicipioPrestacaoServico>
+        </Servico>
+        <ValorCredito>0</ValorCredito>
+        <PrestadorServico>
+            <IdentificacaoPrestador>
+                <Cnpj>41385525000170</Cnpj>
+                <InscricaoMunicipal>642482</InscricaoMunicipal>
+            </IdentificacaoPrestador>
+            <RazaoSocial>CAVALKS INFORMATICA LTDA</RazaoSocial>
+            <Endereco>
+                <Endereco>R DR RATISBONA</Endereco>
+                <Numero>96</Numero>
+                <Bairro>FÁTIMA</Bairro>
+                <Cidade>2304400</Cidade>
+                <Estado>CE</Estado>
+                <Cep>60411220</Cep>
+            </Endereco>
+            <Contato>
+                <Email>lcscvlcnt@gmail.com</Email>
+            </Contato>
+        </PrestadorServico>
+        <TomadorServico>
+            <IdentificacaoTomador>
+                <CpfCnpj>
+                    <Cnpj>10889470000101</Cnpj>
+                </CpfCnpj>
+                <InscricaoMunicipal>246399</InscricaoMunicipal>
+            </IdentificacaoTomador>
+            <RazaoSocial>PORTFOLIO CONSULTORIA EMPRESARIAL LTDA</RazaoSocial>
+            <Endereco>
+                <Endereco>AV DOM LUIS</Endereco>
+                <Numero>1200</Numero>
+                <Bairro>ALDEOTA</Bairro>
+                <Cidade>2304400</Cidade>
+                <Estado>CE</Estado>
+                <Cep>60160196</Cep>
+            </Endereco>
+            <Contato>
+                <Telefone>(85)3104-6999</Telefone>
+                <Email>adm@portfoliogc.com.br</Email>
+            </Contato>
+        </TomadorServico>
+        <OrgaoGerador>
+            <CodigoMunicipio>2304400</CodigoMunicipio>
+            <Uf>CE</Uf>
+        </OrgaoGerador>
+    </Nfse>
+</NFSE>
