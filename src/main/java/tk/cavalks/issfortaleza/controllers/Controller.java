@@ -5,6 +5,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import tk.cavalks.issfortaleza.services.EnvioRPSService;
+
+//TODO resources de uso real para aplicação baseando-se nos jsons
 @RestController
 public class Controller {
 
