@@ -10,6 +10,11 @@ public class Controller {
 
 	@GetMapping("/greeting")
 	public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
+		try {
+			return EnvioRPSService.enviarLoteRPS();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 		return "Helo, "+ name;
 	}
 }
