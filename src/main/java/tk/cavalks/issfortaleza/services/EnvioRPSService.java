@@ -2,6 +2,7 @@ package tk.cavalks.issfortaleza.services;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.StringReader;
 import java.net.URISyntaxException;
 import java.util.HashMap;
@@ -22,15 +23,13 @@ import br.com.issfortaleza.producao.ServiceGinfesImplServiceServiceStub;
 // TODO Chavear prod x homol
 // TODO tramento das exceções
 public class EnvioRPSService {
-	public static final String schemaFolder = "";
 
-	public static String enviarLoteRPS() throws Exception {
-		File arquivoPFX = new File("C:"+File.separator+"CAVALKS.pfx");
+	public static String enviarLoteRPS(InputStream certificado, String senha) throws Exception {
 		XMLSecImpl assinador = new XMLSecImpl();
 
 		String xmlEnvio = RpsToXML(new HashMap<String, String>());
 		validateLoteRPS(xmlEnvio);
-		xmlEnvio = assinador.assinarEnvioLoteRPS(xmlEnvio, arquivoPFX, "12345678");
+		xmlEnvio = assinador.assinarEnvioLoteRPS(xmlEnvio, certificado, senha);
 
 		ServiceGinfesImplServiceServiceStub stub = new ServiceGinfesImplServiceServiceStub(
 				"http://isshomo.sefin.fortaleza.ce.gov.br/grpfor-iss/ServiceGinfesImplService");

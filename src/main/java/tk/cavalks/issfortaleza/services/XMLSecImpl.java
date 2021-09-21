@@ -2,8 +2,6 @@ package tk.cavalks.issfortaleza.services;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.InvalidAlgorithmParameterException;
@@ -49,7 +47,7 @@ public class XMLSecImpl {
 	private PrivateKey privateKey;
 	private KeyInfo keyInfo;
 
-	public String assinarEnvioLoteRPS(String xml, File arquivoPFX, String senhaArquivo) throws Exception {
+	public String assinarEnvioLoteRPS(String xml, InputStream arquivoPFX, String senhaArquivo) throws Exception {
 		Document document = documentFactory(xml);
 		XMLSignatureFactory signatureFactory = XMLSignatureFactory.getInstance("DOM", new XMLDSigRI());
 
@@ -65,14 +63,13 @@ public class XMLSecImpl {
 		return outputXML(document);
 	}
 
-	private void loadCertificates(File certificado, String senha, XMLSignatureFactory signatureFactory) throws Exception {
+	private void loadCertificates(InputStream certificado, String senha, XMLSignatureFactory signatureFactory) throws Exception {
 		KeyStore ks = null;
 
-		InputStream entrada = new FileInputStream(certificado);
 		ks = KeyStore.getInstance("pkcs12");
 
 		try {
-			ks.load(entrada, senha.toCharArray());
+			ks.load(certificado, senha.toCharArray());
 		} catch (IOException e) {
 			throw new Exception("Senha do Certificado Digital incorreta ou Certificado inválido.", e);
 		}
